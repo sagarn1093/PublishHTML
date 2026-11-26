@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Campus<span>Find</span></h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#lost">Lost Items</a></li>
+                <li><a href="#found">Found Items</a></li>
+                <li><a href="#report">Report Item</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Lost Something on Campus?</h1>
+            <p>
+                Don't worry! Find your lost belongings or help
+                someone recover theirs.
+            </p>
+
+            <div class="search-box">
+                <input type="text"
+                    placeholder="Search for lost items...">
+                <button type="button">Search</button>
+            </div>
+
+            <a href="#report" class="hero-btn">Report an Item</a>
+        </div>
+    </section>
+
+    <!-- Lost Items Section -->
+    <section class="items-section" id="lost">
+        <h2>Recently Lost Items</h2>
+        <p class="section-description">
+            Items reported missing by students.
+        </p>
+
+        <div class="item-container">
+
+            <div class="item-card">
+                <div class="item-icon">🎒</div>
+                <h3>Black Backpack</h3>
+                <p>Location: College Library</p>
+                <p>Date: 24 Nov 2026</p>
+                <span class="status lost">Lost</span>
+            </div>
+
+            <div class="item-card">
+                <div class="item-icon">📱</div>
+                <h3>Mobile Phone</h3>
+                <p>Location: Canteen</p>
+                <p>Date: 23 Nov 2026</p>
+                <span class="status lost">Lost</span>
+            </div>
+
+            <div class="item-card">
+                <div class="item-icon">📘</div>
+                <h3>Notebook</h3>
+                <p>Location: Classroom 204</p>
+                <p>Date: 22 Nov 2026</p>
+                <span class="status lost">Lost</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Found Items Section -->
+    <section class="items-section found-section" id="found">
+        <h2>Recently Found Items</h2>
+        <p class="section-description">
+            Help these belongings reach their owners.
+        </p>
+
+        <div class="item-container">
+
+            <div class="item-card">
+                <div class="item-icon">👓</div>
+                <h3>Eye Glasses</h3>
+                <p>Location: Computer Lab</p>
+                <p>Date: 25 Nov 2026</p>
+                <span class="status found">Found</span>
+            </div>
+
+            <div class="item-card">
+                <div class="item-icon">🔑</div>
+                <h3>Set of Keys</h3>
+                <p>Location: Parking Area</p>
+                <p>Date: 24 Nov 2026</p>
+                <span class="status found">Found</span>
+            </div>
+
+            <div class="item-card">
+                <div class="item-icon">💳</div>
+                <h3>ID Card</h3>
+                <p>Location: Main Building</p>
+                <p>Date: 23 Nov 2026</p>
+                <span class="status found">Found</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Report Item Section -->
+    <section class="report-section" id="report">
+        <h2>Report a Lost or Found Item</h2>
+        <p>Help the campus community by reporting an item.</p>
+
+        <form class="report-form">
+
+            <input type="text"
+                placeholder="Your Name" required>
+
+            <input type="email"
+                placeholder="College Email" required>
+
+            <select required>
+                <option value="">Select Item Type</option>
+                <option value="lost">Lost Item</option>
+                <option value="found">Found Item</option>
+            </select>
+
+            <input type="text"
+                placeholder="Item Name" required>
+
+            <input type="text"
+                placeholder="Location">
+
+            <textarea
+                placeholder="Describe the item..."
+                rows="4"></textarea>
+
+            <button type="submit">Submit Report</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>CampusFind</h3>
+        <p>Connecting lost belongings with their owners.</p>
+        <p>© 2026 Campus Lost & Found. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
